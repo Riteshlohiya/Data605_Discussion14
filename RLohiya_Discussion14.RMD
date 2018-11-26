@@ -1,0 +1,38 @@
+---
+title: "RLohiya Discussion14"
+author: "Ritesh Lohiya"
+date: "November 25, 2018"
+output: html_document
+---
+
+#                             Discussion 13
+
+#           IS 605 FUNDAMENTALS OF COMPUTATIONAL MATHEMATICS
+
+#                             Calculus
+
+## Chapter 8.8 Exercise 13
+
+Show that the Taylor series for $f(x)=e^x$, as given in Key Idea 32, is equal to $f(x)$ by applying Theorem 77; that is show $\lim\limits_{n\to\infty} R_n(x)=0$.
+
+
+
+$|R_n(x)| \le \frac{max|f^{n+1}(z)|}{(n+1)!} |x^{n+1}|$.
+
+
+$|R_n(x)| \le \frac{e^z}{(n+1)!} |x^{n+1}|$
+
+
+For any $x$, $\lim\limits_{n\to\infty} \frac{e^z x^{n+1}}{(n+1)!} = 0$. 
+
+
+$\lim\limits_{n\to\infty} R_n(x) = 0$.
+
+
+$f(x) = \sum\limits_{n=0}^{\infty} \frac{f^{(n)}(c)}{n!} (x-c)^n$. 
+
+
+If $c=0$
+
+
+$f(x) = \sum\limits_{n=0}^{\infty} \frac{e^0}{n!} (x-0)^n = \sum\limits_{n=0}^{\infty} \frac{x^n}{n!} = e^x$
